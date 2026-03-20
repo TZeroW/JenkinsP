@@ -14,7 +14,7 @@ def resolver_sistema():
         x = np.linalg.solve(A, b)
         print("Solución del sistema:")
         for i, valor in enumerate(x, start=1):
-            print(f"x{i} = {valor :. 4f}")
+            print(f"x{i} = {valor:.4f}")
         return x
     except np.linalg.LinAlgError:
         print("El sistema no tiene solución o tiene infinitas soluciones.")
